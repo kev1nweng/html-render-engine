@@ -181,7 +181,7 @@
           <textarea
             class="form-control"
             id="htmlInput"
-            rows="20"
+            rows="16"
             placeholder="在此粘贴或编写HTML代码..."
             required
             style="resize: vertical"
@@ -192,10 +192,9 @@
         <div class="options-title">推荐 AI 提示词</div>
         <div class="hint-box">
           <div style="word-break: break-all">
-            请生成一份适合导出为分页 PDF 的
-            HTML，内容可根据页面长度合理分页，但必须避免任何文字段落、图片、表格或区块被不恰当地分页切断（如一半在上一页，一半在下一页）。请合理组织内容结构，确保每个区块、段落或图片在分页时能完整显示，提升
-            PDF 阅读体验。避免使用导致内容被强制分页的 CSS（如
-            page-break-before/after），并确保内容自然流畅地分布在各页。
+            请生成一份适合长页 PDF 导出的
+            HTML，内容排版为单页纵向滚动，不要使用分页或 page-break，避免任何
+            CSS 导致内容被分页切断，所有内容应自然连续显示，适合一页完整导出。
           </div>
         </div>
         <div>
