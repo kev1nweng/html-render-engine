@@ -177,7 +177,7 @@
           id="htmlForm"
           style="flex: 1; display: flex; flex-direction: column; gap: 16px"
         >
-          <label for="htmlInput" class="form-label">HTML输入</label>
+          <label for="htmlInput" class="form-label">HTML 输入</label>
           <textarea
             class="form-control"
             id="htmlInput"
@@ -214,7 +214,7 @@
             />
           </div>
           <div class="option-group">
-            <label for="width">页面宽度(px)</label>
+            <label for="width">页面宽度 (px)</label>
             <input
               type="number"
               id="width"
@@ -227,11 +227,11 @@
             />
           </div>
           <button id="exportBtn" class="btn btn-primary w-100 mt-3">
-            导出为PDF
+            导出为 PDF
           </button>
           <div class="pdf-action-box">
             <a id="pdfLink" class="btn btn-success mt-2" href="#" download
-              >下载PDF</a
+              >下载 PDF</a
             >
             <div id="loader" class="loader mt-3"></div>
           </div>
@@ -270,7 +270,7 @@
         pdfLink.style.opacity = "0.6";
         loader.style.display = "inline-block";
         pdfLink.innerHTML =
-          '<span class="spinner-border spinner-border-sm" style="vertical-align:middle;margin-right:6px;"></span>下载PDF';
+          '<span class="spinner-border spinner-border-sm" style="vertical-align:middle;margin-right:6px;"></span>下载 PDF';
         const htmlContent = document.getElementById("htmlInput").value;
         const scale = parseFloat(document.getElementById("scale").value) || 1;
         const width = parseInt(document.getElementById("width").value) || 1200;
@@ -286,10 +286,10 @@
           pdfLink.classList.remove("disabled");
           pdfLink.style.pointerEvents = "auto";
           pdfLink.style.opacity = "1";
-          pdfLink.innerHTML = "下载PDF";
+          pdfLink.innerHTML = "下载 PDF";
         } else {
-          pdfLink.innerHTML = "下载PDF";
-          alert("PDF导出失败，请重试！");
+          pdfLink.innerHTML = "下载 PDF";
+          alert("PDF 导出失败，请重试！");
         }
       });
     </script>
